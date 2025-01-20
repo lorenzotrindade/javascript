@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>GUARDANDO VALOR VARIAVEL</title>
 </head>
 <style>
@@ -15,8 +16,11 @@
     <h1>Olá mundo</h1>
         <p>Me livrei da maldição</p>
         <script>
-            var  nome = window.prompt("Whats your name? ");
-        </script>
-    
-</body>
+            var n1 = Number.parseInt(window.prompt("Enter a number n1: "))
+            var n2 =  Number.parseInt(window.prompt('Enter a number n2: '))
+            var Soma = n1 + n2
+            window.alert(`This sum between ${n1} and ${n2} genered ${Soma}`)
+
+            </script>
+          </body>
 </html>
