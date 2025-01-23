@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão numero</title>
+</head>
+<body>
+    <script>
+        var n1 = 1545.5
+        window.alert("Seu numero é: " + n1)
+        
+        n1.toFixed(2).replace('.'  ',') //trocar ponto por virgula, e não tem virgula entre, por isso aparece errado, pois usamos no node
+        window.alert("Seu numero é; " + n1)
+
+        n1.toLocalString('PT-BR', {style: 'currency', currency: 'BRL'}) 
+        // iSSO DIZ PARA MIM LOCALIZAR A STRING N1, COLCOAR EM PT-BR, {ADCIONAR ALGUMENTO STYLO: CURRENCY (DINHEIORO), E MODIFICAR O ARGUMENTO PARA BRL}
+
+    </script>
+    
+</body>
+</html>
