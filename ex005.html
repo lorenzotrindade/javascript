@@ -1,0 +1,31 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeirois passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(83, 83, 223);
+            color: white;
+            font: normal 18pt arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciandos os estudos de dom</h1>
+    <p>aqui  vai o resultado</p>
+    <p>Aprendendo a sar o  <strong>DOM</strong> em JS</p>
+    <div>clique aqui</div>
+    <script>
+        // window.document.write ('ola mundo')
+        // window.document.write(window.document.charset)
+        // window.document.write(window.document.URL)
+
+        var p1 = window.document.getElementsByTagName('p') [0]
+        window.document.write('essa é a formatação  ' + p1.innerText)
+    </script>
+
+    
+</body>
+</html>
