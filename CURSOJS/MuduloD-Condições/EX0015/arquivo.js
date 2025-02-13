@@ -1,13 +1,10 @@
-function veriricar() {
+function verificar() {
+    var data = new Date()
+    var ano =  data.getFullYear()
+    var fano = document.getElementById('txtano')
+    var res = document.querySelector("div#res")
 
-    var date= new date()
-    var ano= data.GetFullYear()
-    var fano =document.getElementById('txtano')
-    /*ISSO AQUI ' FANO', É UMA VARIAVEL*/ 
-    var res=document.querySelector('div#res')
-    if (fano.value.length == 0 || fano > ano ) {
-         window.alert('ERRO, insira os dados novamente') 
-    } else {
-            window.alert('tudo ok')
-        }
+    if (fano.value.length == 0 || Number(fano.value) > ano )
+    { window.alert('digite novamente')} else {window.alert('tudo certo')}
 }
+
