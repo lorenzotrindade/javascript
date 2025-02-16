@@ -1,5 +1,5 @@
 body{
-background: rgb(65, 65, 180);
+background: rgb(109, 109, 255);
 font: normal 15pt  black ARIAL;
 text-align: center;
 
@@ -20,10 +20,19 @@ section{
     margin: auto;
     box-shadow: 3px 3px  5px black;
     color: black;
+    text-align: left;
 }
 
 footer{
     font: normal 15pt white italic;
     text-align: center;
 
+}
+
+div{
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+
+    
 }
