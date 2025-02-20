@@ -37,7 +37,5 @@ console.log(num[4])
 // isso aqui ta certo
 // estrutra de rep - declarar variavel - condição - regra de reptição
 
-for(var pos=0;pos<num.length;pos++) {
-    console.log(num[pos])
-}
+
 
