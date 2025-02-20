@@ -5,5 +5,12 @@ for(var pos=0;pos<num.length;pos++)
 {
     console.log(`A posição ${pos} tem os valor ${num[pos]}`)
 }
- /*simplificando mais ainda usando o IN
+ /*simplificando mais ainda usando o IN */
  
+num.sort()
+//para cada pos em num 
+ for(let pos in num)
+    // declarada variavel pos cada um em pos
+ {
+    console.log(`a posição ${pos} recebe o valor de ${num[pos]}`)
+ }
