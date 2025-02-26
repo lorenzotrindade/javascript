@@ -1,7 +1,7 @@
 let num = document.getElementById('fnum')
 var list = document.getElementById('list')
 let res = document.getElementById('res')
-let n1 = Number(1)
+let n1 = 1
 let valores = []
 
 
@@ -22,10 +22,10 @@ function naoLista(n,n1) {
 
 function adicionar() {
     // to criando a variavel seNumero(NUM.VALUE) tem valor? eee !nãoconsta na lisata criada var naolista o valor
-    if (seNumero(num.value)&& !naoLista(num.value, valores))   
-{
+    if (seNumero(num.value)&& !naoLista(num.value, valores)) {
+        window.alert('tudo ok')
+    }
 
-} 
     else {
     window.alert('Valor digitado inválido u já consta na lista')
 }
