@@ -5,13 +5,14 @@ let n1 = 1
 let valores = []
 
 
-function seNumero(n) {
+function isNumero(n) {
     if(Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {return false }
 }
 
-function naoLista(n,n1) {
+// da para fazer com um for isso aqui
+function inLista(n,n1) {
     if(n1.indexOf(Number(n)) != -1) {
         return true
     } else {
@@ -20,9 +21,9 @@ function naoLista(n,n1) {
 } 
 
 
-function adicionar() {
+function Adicionar() {
     // to criando a variavel seNumero(NUM.VALUE) tem valor? eee !nãoconsta na lisata criada var naolista o valor
-    if (seNumero(num.value)&& !naoLista(num.value, valores)) {
+    if (isNumero(num.value) && !inLista(num.value, valores)) {
         window.alert('tudo ok')
     }
 
