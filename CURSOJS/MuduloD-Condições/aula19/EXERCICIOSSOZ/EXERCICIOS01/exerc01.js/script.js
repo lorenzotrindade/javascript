@@ -24,7 +24,10 @@ function inLista(n,n1) {
 function Adicionar() {
     // to criando a variavel seNumero(NUM.VALUE) tem valor? eee !nãoconsta na lisata criada var naolista o valor
     if (isNumero(num.value) && !inLista(num.value, valores)) {
-        window.alert('tudo ok')
+        valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text =`Valor ${num.value} adicionado`
+        list.appendChild(item)
     }
 
     else {
