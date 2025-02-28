@@ -12,8 +12,8 @@ function isNumero(n) {
 }
 
 // da para fazer com um for isso aqui
-function inLista(n,n1) {
-    if(n1.indexOf(Number(n)) != -1) {
+function inLista(n,valores)
+    if(valores.indexOf(Number(n)) != -1) {
         return true
     } else {
         return false
