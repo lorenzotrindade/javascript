@@ -9,9 +9,15 @@ function Calcular () {
     || final.value.length == 0 && Number(final.value) <= 100 || 
     pass.value.length == 0 && Number(pass.value) <= 100) 
     {
-        lista.innerHTML=('O resultado está valido')
+        for (var pulo=pass; ini < final;pass +=) {
+            resultado.innerHTML=`Os valores são ${pulo.value} da chamada`
+        }
+        
      }
-        else {resultado.innerHTML=('O resultado é INvalido')}
+        else {return false}
+
+    
+    var iten = oppenchild(option)
     }
 
 
