@@ -9,11 +9,12 @@ function Calcular () {
     || final.value.length == 0 && Number(final.value) <= 100 || 
     pass.value.length == 0 && Number(pass.value) <= 100) 
     {
-        var pulo = 0
+        var p = 0
 
-       if (pulo < final) {
-        for (var pulo=pass; pulo < final;pass += final) {
-            resultado.innerHTML=`Os valores são ${pulo.value} da chamada`
+       if (p < final) {
+        for (pulo=pass; pulo < final;pulo += final) {
+
+            resultado.innerHTML=`Os valores são ${pulo} da chamada`
         }
         }
         
