@@ -17,17 +17,14 @@ var res= document.getElementById('res')
         res.innerHTML+= `Os numeros são:`
         
 
-        if(p < f) {
+        if(p < f) // prograssiva 
+         {
             for(var pulo = i;pulo<f;pulo+=p) {
                 res.innerHTML+= ` ${pulo} 👉🏼`
                 
-                
             }  
-        }  else {
-            for(var pulo = i; pulo > f; pulo-=p){
-                res.innerHTML+= `${pulo}..`
-            }
-        }
+        } 
     }
+}
 
- }
+ 
