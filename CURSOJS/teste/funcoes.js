@@ -15,15 +15,23 @@ var res= document.getElementById('res')
         let f = Number(fim.value)
         let p = Number(pass.value) 
         res.innerHTML+= `Os numeros são:`
+
+        if (i > 100 || f >100 || p>100 ) 
+            {
+            alert('ta errado isso ai')
+        } 
+        else  ( i < 100 || f < 100 || p <100 ) 
+            {
+        if (i < f) {
+            for (var pulo =i; pulo < f; pulo+=p)
+             } if (i > f)
+            { 
+        for(var pulo=i; pulo > f; pulo-=p)
+        } else {window.alert('Inicio e Parada não podem ser iguais')}
+        
+        }
         
 
-        if(p < f) // prograssiva 
-         {
-            for(var pulo = i;pulo<f;pulo+=p) {
-                res.innerHTML+= ` ${pulo} 👉🏼`
-                
-            }  
-        } 
     }
 }
 
