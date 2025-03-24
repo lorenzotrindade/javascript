@@ -20,14 +20,20 @@ var res= document.getElementById('res')
             {
             alert('ta errado isso ai')
         } 
-        else  ( i < 100 || f < 100 || p <100 ) 
+        else if ( i < 100 && f < 100 && p <100 ) 
             {
         if (i < f) {
-            for (var pulo =i; pulo < f; pulo+=p)
-             } if (i > f)
-            { 
-        for(var pulo=i; pulo > f; pulo-=p)
-        } else {window.alert('Inicio e Parada não podem ser iguais')}
+            for (var pulo =i; pulo < f; pulo+=p) {
+                res.innerHTML+=`${pulo} 👉`
+            } 
+             } 
+           else if(i > f) { for(var pulo=i; pulo > f; pulo-=p)
+            {
+            res.innerHTML+=`${pulo} 👈`
+            
+        } 
+        } 
+            
         
         }
         
