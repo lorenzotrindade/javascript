@@ -25,3 +25,11 @@ div >  p  {
     font: 200;
     text-align: left;
 }
+
+div#idade {
+    background-color: rgb(163, 63, 16);
+}
+
+div#residade {
+    background-color: rgb(163, 63, 16);
+}
