@@ -1,18 +1,19 @@
-calcularidade() {
-    let ano = document.getfullyear()
+calcularidade();{
+    let ano = new Date().getFullYear()
     let nascimento = document.getElementById('nascimento')
-    let residade = document.getElementeById('residade')
+    let residade = document.getElementById('residade')
 
-    if(ano.value.length == 0 || nascimento.value.length == 0 
-        && ano.value <= 0 && nascimento.value >= ano)  {
+    if (nascimento.value=='' || Number(nascimento.value) <= 0 || Number(nascimento.value) >= ano  )  {
             alert('valores incorretos')
         }  else {
-            n = Number(nascimento)
-            a = Number(ano)
+            n = Number(nascimento.value)
+            a = ano
+            residade.innerHTML= 'Sua idade é'
 
             if(n < a){
-                return residade;
-            }
+                var idade = a-n
+                residade.innerHTML+= `${idade}`
+            } else {return true;}
         }
     
 }
